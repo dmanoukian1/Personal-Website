@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .grid-container {
+      display: grid;
+      height: 724px;
+      width: 1200px;
+      grid-template-rows: repeat(100, 7.24px);
+      grid-template-columns: repeat(100, 12px);
+    }
+    .item {
+      border: 10px solid #232629;
+    }
+    .blue {
+      background-color: #004592;
+    }
+    .red {
+      background-color: #E72F24;
+    }
+    .white {
+      background-color: #F0F1EC;
+    }
+    .yellow {
+      background-color: #F9D01E;
+    }
+    .item1 {
+      grid-row: 1 / 15;
+      grid-column: 1 / 35;
+      border-top: 0px; 
+      border-left: 0px;
+    }
+    .item2 {
+      grid-row: 1 / 6;
+      grid-column: 35 / 84;
+      border-top: 0px; 
+    }
+    .item3 {
+      grid-row: 1 / 90;
+      grid-column: 84 / 100;
+      border-top: 0px;
+      border-right: 0px;
+    }
+    .item4 {
+      grid-row: 15 / 95;
+      grid-column: 1 / 25;
+      border-left: 0px;
+    } 
+    .item5 {
+      grid-row: 15 / 70;
+      grid-column: 25 / 35;
+    }
+    .item6 {
+      grid-row: 6 / 70;
+      grid-column: 35 / 69;
+    }
+    .item7 {
+      grid-row: 6 / 70;
+      grid-column: 69 / 84;
+    }
+    .item8 {
+      grid-row: 70 / 95;
+      grid-column: 25 / 50;
+    }
+    .item9 {
+      grid-row: 70 / 90;
+      grid-column: 50 / 84;
+    }
+    .item10 {
+      grid-row: 95 / 100;
+      grid-column: 1 / 50;
+      border-left: 0px;
+      border-bottom: 0px;
+    }
+    .item11 {
+      grid-row: 90 / 100;
+      grid-column: 50 / 75;
+      border-bottom: 0px;
+    }
+    .item12 {
+      grid-row: 90 / 100;
+      grid-column: 75 / 100;
+      border-bottom: 0px;
+      border-right: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <div class="grid-container">
+    <div class="item1 item blue"></div>
+    <div class="item2 item red"></div>
+    <div class="item3 item white"></div>
+    <div class="item4 item white"></div>
+    <div class="item5 item white"></div>
+    <div class="item6 item yellow"></div>
+    <div class="item7 item white"></div>
+    <div class="item8 item blue"></div>
+    <div class="item9 item red"></div>
+    <div class="item10 item yellow"></div>
+    <div class="item11 item white"></div>
+    <div class="item12 item blue"></div>
+</body>
+
+</html>
